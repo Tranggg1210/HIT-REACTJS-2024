@@ -46,6 +46,11 @@
     ```sh
     yarn create react-app my-app
     ```
+- [x] Với vite:
+    ```sh
+    npm create vite
+    yarn create vite
+    ```
 
 ##### 2. Components
 - Cho phép chúng ta chia nhỏ UI để tái sử dụng (header, footer, button,card, …)
@@ -57,6 +62,21 @@
     - https://www.youtube.com/watch?v=qwy6tOD0v4g
 - [x] Github Page
     - https://viblo.asia/p/deploy-ung-dung-reactjs-len-github-pages-1VgZvw3MlAw
+
+##### 4. Lưu ý
+- [x] Bình thường ở html thuần thì khi ta đặt class sẽ là kiểu \<div class="abc"> còn với react thì class sẽ được thay bằng className(lý do từ khóa class bị trùng với từ khóa class components) 
+**\<div className="abc">**
+    
+- [x] Cách style inline trong react: 
+**\<div className="app" style={{ height: '100vh' }}>**
+
+- [x] Cách import file css vào file jsx:  
+**import './App.css';**
+
+- [x] Cách sử dụng xự kiện onClick:
+![alt text](./ex01-img04.png)
+
+
 
 
 
