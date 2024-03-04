@@ -33,7 +33,8 @@
 ##### 1. Khởi tạo dự án (tham khảo: https://create-react-app.dev/docs/getting-started/)
 - [x] Với npm: 
     ```sh
-    npm init react-app my-app
+    npm install -g create-react-app
+    create-react-app my-app
     ```
 - [x] Với npx:
     ```sh
@@ -49,6 +50,14 @@
 ##### 2. Components
 - Cho phép chúng ta chia nhỏ UI để tái sử dụng (header, footer, button,card, …)
 - Chia càng nhỏ càng dễ quản lý
+
+##### 3. Deploy với Vercel hoặc github page
+- [x] Vercel
+    - https://vercel.com/guides/deploying-react-with-vercel
+    - https://www.youtube.com/watch?v=qwy6tOD0v4g
+- [x] Github Page
+    - https://viblo.asia/p/deploy-ung-dung-reactjs-len-github-pages-1VgZvw3MlAw
+
 
 
 
