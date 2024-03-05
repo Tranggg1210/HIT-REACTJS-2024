@@ -76,6 +76,9 @@
 - [x] Cách sử dụng sự kiện onClick:
 ![alt text](./ex01-img04.png)
 
+- [x] Cách đặt tên biến:
+![alt text](./ex01-img05.png)
+
 
 
 
