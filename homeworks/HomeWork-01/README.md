@@ -16,5 +16,5 @@
 - [x] Sử dụng ReactJS code lại thành phần Header, Banner, hết phần Save your time to using SoftLand và Footer của trang web sau
 - [x] Link: https://bootstrapmade.com/demo/SoftLand/
 - [x] Dealine: 20h ngày 10/3
-- [x] Yêu cầu nộp link vercel hoặc github page và link code trên github
+- [x] Yêu cầu nộp link deploy(có thể là vercel hoặc github page) và link code trên github
 - [x] Lưu ý các bạn có thể chia nhánh branch trên GitHub để tránh việc khởi tạo lại dự án. Với mỗi BTVN là một nhánh riêng biệt. 

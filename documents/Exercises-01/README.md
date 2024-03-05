@@ -73,7 +73,7 @@
 - [x] Cách import file css vào file jsx:  
 **import './App.css';**
 
-- [x] Cách sử dụng xự kiện onClick:
+- [x] Cách sử dụng sự kiện onClick:
 ![alt text](./ex01-img04.png)
 
 
