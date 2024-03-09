@@ -1,4 +1,4 @@
-# useState, props, rendering list, props children 
+# useState, props, rendering lists
 
 # I. useState
 ### useState là 1 React Hook dùng để thêm 1 **state variable** (biến trạng thái) cho component.
@@ -24,6 +24,7 @@
 
 ## Ví dụ luyện tập
 ### VD1: Counter 
+
 ![alt text](image-6.png)
 ![alt text](image-7.png)
 
@@ -37,20 +38,27 @@ Khi thay đổi nội dung trong ô input thì nội dung trong dấu "" cũng t
 
 # II. Props
 - Props là thông tin mà được truyền vào thẻ JSX
+
 ![alt text](image-12.png)
 ## Truyền props cho component
 
 1. Truyền các props cho component con
+
 ![alt text](image-13.png)
 2. Đọc props ở trong component con
+
 ![alt text](image-15.png)
+
 3. Children là 1 prop đặc biệt (có thể là html, component, text, variable)
+
 ![alt text](image-16.png)
 
 # III. Rendering Lists
+
 ![alt text](image-17.png)
 
 Trong ví dụ trên ta thấy thẻ li lặp lại nhiều lần với nội dung bên trong khác nhau
+
 Để viết code clean hơn ta có thể cho các nội dung trong thẻ li vào 1 mảng và map ra UI
 
 ![alt text](image-18.png)
