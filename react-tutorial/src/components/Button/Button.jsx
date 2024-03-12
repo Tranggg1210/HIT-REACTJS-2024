@@ -1,8 +1,8 @@
 import './Button.css';
-const Button = () => {
+const Button = (props) => {
     return (
-        <button className='btn' onClick={() => alert("Đã thêm vào giỏ hàng")}>
-            Add to Card
+        <button className='btn'>
+            {props.children || 'Click me!'}
         </button>
     )
 }

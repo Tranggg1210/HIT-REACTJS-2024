@@ -1,0 +1,12 @@
+.user-card-list{
+    margin-top: 40px;
+}
+.user-card-list > .wide{
+    flex-direction: column;
+}
+.user-card-list > .wide > .container{
+    flex-wrap: wrap;
+}
+.user-card-list .profile{
+    margin: 24px;
+}

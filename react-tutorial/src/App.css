@@ -1,6 +1,18 @@
 .app{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-color: #E1F7D2; */
+    height: 100%;
+}
+
+.wide{
+    width: 80%;
+}
+
+.container
+{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E1F7D2;
 }

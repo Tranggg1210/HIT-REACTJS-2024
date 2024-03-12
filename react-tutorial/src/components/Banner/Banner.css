@@ -1,0 +1,10 @@
+.banner{
+    margin-top: 73px;
+    height: 40vh;
+    background-image: linear-gradient(to bottom right, #787FF6, #7BD5F5);
+    color: #fff;
+    text-align: center;
+}
+.banner p{
+    margin: 12px 0;
+}
