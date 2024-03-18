@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './App.scss';
 import Card from './components/Card/Card';
 import Counter from './components/Counter/Counter'
 import Profile from './components/Profile/Profile';
