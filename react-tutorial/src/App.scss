@@ -1,9 +1,20 @@
+@import './assets/scss/mixins';
+
 .app {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    height: 100vh;
+
+    // @include flex {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center
+    // }
+
+    // @include mobile {
+    //     background-color: coral;
+    // }
+
+    ;
     /* background-color: #E1F7D2; */
-    height: 100%;
 }
 
 .wide {
