@@ -1,0 +1,31 @@
+@import '../../assets/scss/variables';
+
+.card2 {
+    $primary-color: red;
+
+    background-color: $primary-text;
+    border: 1px solid cornflowerblue;
+    border-radius: 12px;
+    padding: 16px;
+    width: 400px;
+    height: max-content;
+    margin: 40px auto;
+    cursor: pointer;
+    transition: all 0.4s linear;
+
+    &>img {
+        width: 100%;
+    }
+
+    &>h1 {
+        text-align: center;
+        margin: 10px 0;
+
+    }
+
+    &:hover {
+        background-color: cornflowerblue;
+        color: #fff;
+        transform: scale(1.2);
+    }
+}

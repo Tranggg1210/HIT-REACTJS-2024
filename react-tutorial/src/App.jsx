@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.scss';
 import Card from './components/Card/Card';
+import Card2 from './components/Card2/Card2';
 import Counter from './components/Counter/Counter'
 import Profile from './components/Profile/Profile';
 import Header from './components/Header/Header';
@@ -13,7 +14,7 @@ import Search from './components/Search/Search';
 
 const App = () => {
   return (
-    <div className="app " >
+    <div className="app flex justify-center items-center" >
       {/* <Card />
       <Counter /> */}
       <Header />
@@ -23,6 +24,7 @@ const App = () => {
         <Search />
       </UserCardList>
       <Footer />
+      {/* <Card2 /> */}
     </div>
   )
 }

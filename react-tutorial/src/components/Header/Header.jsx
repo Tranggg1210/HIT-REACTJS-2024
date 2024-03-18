@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css';
 import logo from '../../assets/images/logo.png';
+import Toggle from '../Toggle/Toggle';
 
 function Header() {
     return (
@@ -16,6 +17,7 @@ function Header() {
                     <a href="">Service</a>
                     <a href="">Contact</a>
                 </nav>
+                <Toggle />
             </div>
         </header>
     )
