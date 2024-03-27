@@ -133,23 +133,31 @@ SCSS Extend: Với các thuộc tính có cùng kiểu định dạng thì ta c�
 ### 4. Tailwind CSS https://tailwindcss.com/docs/installation
 - Cài đặt
     ```sh
-      npm: npm install -D tailwindcss
-      yarn: yarn add -D tailwindcss
+      npm: npm install -D tailwindcss postcss autoprefixer
+      yarn: yarn add -D tailwindcss postcss autoprefixer
   		
-      Sau đó: npx tailwindcss init
+      Sau đó: npx tailwindcss init -p
     ```
 - Add đoạn mã sau vào tailwind.config.js 
     ```sh
     /** @type {import('tailwindcss').Config} */
-        module.exports = {
-          content: ["./src/**/*.{html,js,jsx}"],
-          theme: {
+        export default {
+        content: [
+            "./index.html",
+            "./src/**/*.{js,ts,jsx,tsx}",
+        ],
+        theme: {
             extend: {},
-          },
-          plugins: [],
+        },
+        plugins: [],
         }
     ```
 - Add đoạn mã sau vào tệp css chính là index.css
+```sh
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+```
 ![alt text](./img-09.png)
 - Cài extension: Tailwind CSS IntelliSense
 ![alt text](./img-10.png)
