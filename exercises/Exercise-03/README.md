@@ -12,7 +12,7 @@
 - [x] useEffect
 
 #### 3. Bài tập về nhà
-- [x] Bài 1: Code lại giao diện mẫu bằng SCSS và responsive trang web(link web mẫu: https://hit-reactjs-2024.vercel.app/)
+- [x] Bài 1: Code lại giao diện mẫu bằng SCSS và responsive trang web (link web demo: https://hit-reactjs-2024.vercel.app/)
 - [x] Bài 2: Code lại giao diện BTVN01 bằng SCSS và responsive
 - [x] Bài 3 (bonus không cần nhất thiết phải làm): Ở bài tập số 1 (Code lại giao diện mẫu bằng SCSS và responsive trang web) chị muốn khi cách em nhấn vô nút toggle bên phải thì giao diện chuyển sang chế độ darkmode với màu sắc giao diện là các bé tự thiết kế.
 - [x] Dealine: 20h ngày 24/3
