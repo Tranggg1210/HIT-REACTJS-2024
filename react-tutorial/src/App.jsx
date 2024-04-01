@@ -10,9 +10,17 @@ import UserCardList from './components/UserCardList/UserCardList';
 import dataUsers from './data/users.json';
 import Footer from './components/Footer/Footer';
 import Search from './components/Search/Search';
+import UseRef from './components/UseRef/UseRef';
+import UseMemo from './components/UseMemo/UseMemo';
+import Memo from './components/Memo/Memo';
 
 
 const App = () => {
+  const [count, setCount] = useState(0);
+  const [count1, setCount1] = useState(0);
+  const increment = () => {
+    setCount(pre => pre + 1)
+  }
   return (
     <div className="app flex justify-center items-center" >
       {/* <Card />
@@ -25,6 +33,10 @@ const App = () => {
       </UserCardList>
       <Footer /> */}
       {/* <Card2 /> */}
+      {/* <UseRef/> */}
+      {/* <UseMemo/> */}
+      <Memo onIncrement={increment} />
+      <h1>{count}</h1>
     </div>
   )
 }
