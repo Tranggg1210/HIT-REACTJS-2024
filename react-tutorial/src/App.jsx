@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import './App.scss';
 import Card from './components/Card/Card';
 import Card2 from './components/Card2/Card2';
@@ -17,13 +17,13 @@ const App = () => {
     <div className="app flex justify-center items-center" >
       {/* <Card />
       <Counter /> */}
-      <Header />
-      <Banner />
+      {/* <Header />
+      <Banner /> */}
       {/* <Profile /> */}
-      <UserCardList usersList={dataUsers} >
+      {/* <UserCardList usersList={dataUsers} >
         <Search />
       </UserCardList>
-      <Footer />
+      <Footer /> */}
       {/* <Card2 /> */}
     </div>
   )
