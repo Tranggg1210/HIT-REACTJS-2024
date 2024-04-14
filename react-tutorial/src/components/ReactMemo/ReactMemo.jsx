@@ -1,16 +1,14 @@
 import React, { memo } from 'react'
 
-function Memo({onIncrement}) {
-
+function ReactMemo({onIncrement}) {
+  console.log("re-render");
   return (
     <div>
-        Memo
-        // hooks
-        // HOC
-        // Render props
+        ReactMemo <br />
         <button onClick={onIncrement}>increment</button>
     </div>
+    
   )
 }
 
-export default memo(Memo)
+export default memo(ReactMemo)

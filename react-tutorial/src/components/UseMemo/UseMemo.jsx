@@ -1,36 +1,37 @@
 import React, { useMemo, useState } from 'react'
 
 function UseMemo() {
-    const [name, setName] = useState('');
-    const [price, setPrice] = useState('');
-    const [products, setProducts] = useState([]);
-    const handleAdd = () => {
-        setProducts([...products, {
-            id: Math.random(),
-            name,
-            price: +price
-        }])
-    }
+  const [products, setProducts] = useState([]);
+  const [name, setName] = useState('');
+  const [price, setPrice] = useState("");
 
-    const total = useMemo(() => {
-        return products.reduce((pre, cur) => pre + cur.price, 0)
-    },[products])
-
+  const sumPrice = useMemo(() => {
+    return products.reduce((pre, cur) => {
+      return pre + Number(cur.price);
+    }, 0)
+  }, [products])
+  
+  const addProduct = () => {
+    setProducts([...products, {
+        name, 
+        price
+    }])
+  }
   return (
     <div>
-        <label htmlFor="name">Name: </label>
-        <input type="text" name="" id="name" onChange={e => setName(e.target.value)} /> <br />
-        <label htmlFor="price" >Price: </label>
-        <input type="text" name="" id="price" onChange={e => setPrice(e.target.value)}  /> <br />
-        <button onClick={handleAdd}>Add</button>
-        <h4>Total: {total}</h4>
+      <label htmlFor=''>Name: </label>
+      <input type='text' onChange={e => setName(e.target.value)} /> <br />
+      <label htmlFor=''>Price: </label>
+      <input type='text' name='' id='' onChange={e => setPrice(e.target.value)}/> <br />
+      <button onClick={addProduct}>Add</button>
+      <h3>Sum: {sumPrice} </h3>
+      <ul>
         {
-            products.length > 0 && products.map((product) => (
-                <p key={product.id}>
-                    {product.name} - {product.price}
-                </p>
-            ) )
+            products && products.map((product, index) => (
+                <li key={index}>{product.name} - {product.price}</li>
+            ))
         }
+      </ul>
     </div>
   )
 }
