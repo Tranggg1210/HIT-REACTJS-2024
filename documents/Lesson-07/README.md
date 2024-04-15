@@ -1,13 +1,14 @@
 # Form toàn tập (Formik, Yup, React Hook Form)
 
-## Formik 
+## Formik
+
 https://formik.org/docs/tutorial
 
 ```
 npm i formik
 ```
 
-Ví dụ cơ bản: 
+Ví dụ cơ bản:
 
 ```ruby
 import React from 'react';
@@ -15,13 +16,13 @@ import { useFormik } from 'formik';
 
 const validate = values => {
    const errors = {};
-  
+
    if (!values.email) {
      errors.email = 'Required';
    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
      errors.email = 'Invalid email address';
    }
- 
+
    return errors;
  };
 
@@ -54,12 +55,12 @@ const SignupForm = () => {
       />
     </div>
     {
-      formik.touched.email && formik.errors.email 
-      ? 
+      formik.touched.email && formik.errors.email
+      ?
       <div>{formik.errors.email}</div>
-      : 
+      :
       null
-    }  
+    }
       <button type="submit">Submit</button>
 
     </form>
@@ -68,6 +69,7 @@ const SignupForm = () => {
 ```
 
 ## Yup
+
 ```
 npm install yup
 
@@ -173,12 +175,14 @@ const SignupForm = () => {
 };
 ```
 
-## React Hook Form 
+## React Hook Form
+
 https://react-hook-form.com/docs/useform
 
 ```
 npm install react-hook-form yup @hookform/resolvers
 ```
+
 ```ruby
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup';

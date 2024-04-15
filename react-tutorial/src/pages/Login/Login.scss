@@ -1,0 +1,48 @@
+@use "../../styles/mixins" as mixins;
+
+.login{
+    height: 100vh;
+    @include mixins.flex;
+    background-color: #82bc61;
+    &-form{
+        width: 400px;
+        padding: 36px 48px 48px;
+        background-color: #fff;
+        box-shadow: 0 1px 12px rgba(0 0 0/20%);
+    }
+    input{
+        border: 2px solid transparent;
+        outline: none;
+        background-color: #f2f2f2;
+        font-size: 15px;
+        padding:14px 16px;
+        margin: 12px 0;
+        width: 100%;
+        &:focus{
+            border: 2px solid #53af50;
+        }
+    }
+    .btn-login{
+        @extend input;
+        background-color: #53af50;
+        color: #fff;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    p{
+        margin-top: 8px;
+        font-size: 13px;
+        text-align: center;
+        a{
+            color: #53af50;
+        }
+    }
+    .error{
+        text-align: left;
+        color: red;
+        font-size: 14px;
+        margin: -8px 0 12px ;
+    }
+}

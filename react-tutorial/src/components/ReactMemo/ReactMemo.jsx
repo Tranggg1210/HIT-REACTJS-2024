@@ -1,13 +1,12 @@
 import React, { memo } from 'react'
 
 function ReactMemo({onIncrement}) {
-  console.log("re-render");
+  console.log('re-render')
   return (
     <div>
-        ReactMemo <br />
-        <button onClick={onIncrement}>increment</button>
+      ReactMemo <br />
+      <button onClick={onIncrement}>increment</button>
     </div>
-    
   )
 }
 

@@ -4,13 +4,12 @@ import ReactMemo from '../ReactMemo/ReactMemo'
 function Counter() {
   const [counter, setCounter] = useState(0)
   const handleIncrement = useCallback(() => {
-    setCounter(counter + 1)
-  }, [])
-  console.log("re-render");
+    setCounter(pre => pre + 1)
+  },[])
   return (
     <div>
       <h1>Counter: {counter}</h1>
-      <ReactMemo onIncrement={handleIncrement}/>
+      <ReactMemo onIncrement={handleIncrement}  />
     </div>
   )
 }
