@@ -13,7 +13,9 @@
 - [x] Cách hoạt động của useMemo là bằng cách nhận vào hai tham số: một là một hàm mà kết quả của nó sẽ được lưu trữ, và hai là một mảng dependencies - những giá trị mà nếu có sự thay đổi sẽ gây ra việc tính toán lại giá trị của hàm đó.
 - [x] Khi useMemo được sử dụng, React sẽ gọi hàm được truyền vào và lưu trữ kết quả trả về của nó. Nếu dependencies không thay đổi giữa các render, useMemo sẽ trả về giá trị được lưu trữ trước đó, giúp tiết kiệm thời gian tính toán và cải thiện hiệu suất ứng dụng.
       ![alt text](./less05-img01.png)
-      **- React.memo**
+
+**- React.memo**
+
 - [x] React.memo là một HOC (Higher Order Component) được sử dụng để tối ưu hiệu suất trong React bằng cách lưu trữ phiên bản memoized (bộ nhớ cache) của một component và trả về nó để sử dụng lại trong các render khác mà không cần render lại component đó.
 - [x] Khi một component được bao bọc bởi React.memo, React sẽ so sánh các props được truyền vào component đó với phiên bản props trước đó. Nếu các props không thay đổi, React.memo sẽ trả về phiên bản memoized của component đó đã được lưu trữ trước đó, giúp tiết kiệm thời gian render lại component và cải thiện hiệu suất ứng dụng.
       ![alt text](./less05-img02.png)

@@ -1,9 +1,5 @@
-import './Button.css';
+import './Button.css'
 const Button = (props) => {
-    return (
-        <button className='btn'>
-            {props.children || 'Click me!'}
-        </button>
-    )
+  return <button className='btn'>{props.children || 'Click me!'}</button>
 }
-export default Button;
+export default Button
