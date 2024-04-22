@@ -37,7 +37,7 @@ Thường ta sẽ định tuyến cho các thành phần của trang web tại f
 
 ![alt text](image-4.png)
 
-Trong đó to thực hiện định tuyến cho thành phần nào đó, element là các thành phần được định tuyến, thường là các component
+Trong đó path thực hiện định tuyến cho thành phần nào đó, element là các thành phần được định tuyến, thường là các component
 
 Trường hợp khi các bạn muốn một đường dẫn chi tiết tới thành phần nào đó ta sẽ sử dụng slug tại đường dẫn 
 
@@ -170,8 +170,18 @@ const elements = useRoutes([
       element: <About />
     },
     {
-      path: '/staff/*',
-      element: <ProductList />
+      path: '/product/*',
+      element: <ProductList />,
+      children: [
+        {
+          path: ':productId',
+          element: <Product />
+        },
+        {
+          path: 'add-product',
+          element: <AddProduct />
+        },
+      ]
     },
     {
       path: '*',
