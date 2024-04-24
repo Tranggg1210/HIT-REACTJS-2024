@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 
-function ReactMemo({onIncrement}) {
+function ReactMemo({ onIncrement }) {
   console.log('re-render')
   return (
     <div>
