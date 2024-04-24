@@ -3,19 +3,6 @@
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-
-    // @include flex {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center
-    // }
-
-    // @include mobile {
-    //     background-color: coral;
-    // }
-
-    ;
-    /* background-color: #E1F7D2; */
 }
 
 .wide {
@@ -26,4 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.active{
+    color: orangered;
 }
