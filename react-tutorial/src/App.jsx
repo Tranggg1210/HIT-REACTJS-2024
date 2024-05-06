@@ -1,12 +1,25 @@
-import React, { useReducer } from 'react'
+import React, { createContext, useReducer, useState } from 'react'
 import './App.scss'
+import Content from './components/Content/Content'
+
+
+export const ThemeContext = createContext();
+
 
 function App() {
-  const [todo, dispatch] = useReducer(reducer, initState);
+  const [theme, setTheme] = useState(false);
+  const handleToggleTheme = () => setTheme(!theme);
+
   return (
-    <div className='app'>
-      
-    </div>
+    <ThemeContext.Provider value={{
+      theme,
+      handleToggleTheme
+    }}>
+      <div className='app'>
+        
+        <Content/>
+      </div>
+    </ThemeContext.Provider>
   )
 }
 
