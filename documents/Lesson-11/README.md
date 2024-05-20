@@ -62,15 +62,24 @@ Với Redux, ta đưa tất cả data, các state vào 1 nơi gọi là store, k
 
 **B2: Tạo một thư mục store và các file liên quan**
 
-1. File type.js
+* 1. File type.js
+     
    ![alt text](image-13.png)
-2. File action.js
+   
+* 2. File action.js
+     
    ![alt text](image-10.png)
-3. File reduce.js
+   
+* 3. File reducer.js
+     
    ![alt text](image-14.png)
-4. File index.js
+   
+* 4. File index.js
+     
    ![alt text](image-12.png)
-   **B3: Fix file main**
+   
+**B3: Fix file main**
+
    ![alt text](image-11.png)
-   **B4: Fix file App**
-   ![alt text](image-9.png)
+   
+**B4: Fix file App**
