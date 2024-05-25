@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import Context from "../store/Context"
+import Context from "../storeContext/Context"
 
 const useStore = () => {
     const [state, dispatch] = useContext(Context);

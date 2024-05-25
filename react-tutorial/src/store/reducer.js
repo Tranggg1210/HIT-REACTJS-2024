@@ -1,23 +1,17 @@
-import { SET_TODO_INPUT } from "../constants/storeConstants";
+import { INCREMENT } from "./types"
 
 const initState = {
-    todoInput:'',
-    todos: []
+    count: 0,
 }
 
-const reducer = (state, action) => {
-    switch(action.type)
-    {
-        case SET_TODO_INPUT: 
+export const reducer = (state = initState, action) => {
+    switch (action.type) {
+        case INCREMENT:
             return {
-                ...state,
-                todoInput: action.payload
+                count: state.count + 1
             }
-        default: {
-            throw new Error('Error')
-        }
+    
+        default:
+            return state
     }
 }
-
-export {initState};
-export default reducer;

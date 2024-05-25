@@ -1,18 +1,17 @@
 import React from 'react'
 import './App.scss';
-import useStore from './hooks/useStore';
-import { actions } from './store';
+import { store } from './store';
+import {increment} from './store/actions'
+import { useSelector } from 'react-redux';
 
 function App() {
-  const [state, dispatch] = useStore();
-  console.log(state);
+  const count = useSelector(store.getState);
   return (
     <div>
-      <input type="text" 
-        value={state.todoInput}
-        
-        onChange={(e) => dispatch(actions.setInputTodo(e.target.value))}
-      />
+      <h1>{count.count}</h1>
+      <button
+        onClick={() => store.dispatch(increment())}
+      >Tăng</button>
     </div>
   )
 }
