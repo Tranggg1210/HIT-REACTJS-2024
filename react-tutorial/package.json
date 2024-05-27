@@ -11,6 +11,7 @@
     "format": "prettier --write './**/*.{js,jsx,json}'"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.5",
     "axios": "^1.6.8",
     "formik": "^2.4.5",
     "localforage": "^1.10.0",
