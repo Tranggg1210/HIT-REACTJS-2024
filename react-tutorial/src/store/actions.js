@@ -1,6 +1,11 @@
-import { SET_TODO_INPUT } from "../constants/storeConstants";
+import { INCREMENT } from "./types"
 
-export const setInputTodo = (payload) => ({
-    type: SET_TODO_INPUT,
-    payload
-})
+const increment = () => {
+    return {
+        type: INCREMENT
+    }
+}
+
+export {
+    increment
+}
