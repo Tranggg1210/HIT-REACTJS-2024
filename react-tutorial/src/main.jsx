@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.scss'
 import './styles/index.scss'
 import App from './App'
-import { StoreProvider } from './storeContext'
 import {Provider} from 'react-redux'
 import { store } from './store'
 
