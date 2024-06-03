@@ -1,11 +1,13 @@
 import React from 'react'
 import { Formik, Form, Field } from 'formik'
-import axios from 'axios'
-
 import './Login.scss'
 import { loginValidate } from '../../utils/loginValidate'
+import { login } from '../../api/auth.api'
+import { useDispatch } from 'react-redux'
+import { save } from '../../store/auth.store'
 
 function Login() {
+  const dispatch = useDispatch()
   return (
     <div className='login'>
       <Formik
@@ -16,9 +18,15 @@ function Login() {
         validationSchema={loginValidate}
         onSubmit={async (values) => {
           try {
-            const { data } = await axios.post('https://dummyjson.com/auth/login', values)
-            localStorage.setItem('login', data.token) // lưu giá trị
-            sessionStorage.setItem('session-login', data.token)
+            dispatch(
+              save({
+                token: 'dhsajk',
+              }),
+            )
+            const result = await login({
+              username: values.username,
+              password: values.password,
+            })
           } catch (error) {
             console.log(error)
           }
